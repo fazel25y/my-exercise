@@ -1,0 +1,233 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  height: 1000vh;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.title_tag {
+  color: #00044a;
+}
+
+.header_class {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.table {
+  font-weight: 600;
+  color: #00044a;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  color: #00044a;
+}
+.table a {
+  position: relative;
+}
+.table > a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: #000dff;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  transform: translateX(0);
+  transition: all 0.3s ease-out 0s;
+  z-index: 1;
+}
+.table > a:hover::after {
+  transform: translateX(1);
+  width: 100%;
+}
+.table > a:hover {
+  color: #000dff;
+}
+
+.button {
+  display: inline-flex;
+  color: #fff;
+  background-color: #27cb8b;
+  border-radius: 5px;
+  padding: 16px 48px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.button::before {
+  content: "";
+  display: block;
+  background-color: #27cb8b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  z-index: 0;
+}
+.button > * {
+  position: relative;
+  z-index: 1;
+}
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.secondary_button {
+  display: inline-flex;
+  color: #fff;
+  background-color: #000dff;
+  border-radius: 5px;
+  padding: 16px 48px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.secondary_button::before {
+  content: "";
+  display: block;
+  background-color: #27cb8b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  z-index: 0;
+}
+.secondary_button > * {
+  position: relative;
+  z-index: 1;
+}
+.secondary_button:hover::before {
+  transform: translateX(0);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  background-color: #f1f5f9;
+  width: 100%;
+  min-height: 120vh;
+  position: relative;
+}
+.container::before {
+  content: "TALENTS";
+  display: block;
+  font-size: 19vw;
+  font-weight: 900;
+  color: #fff;
+  width: 90vw;
+  position: absolute;
+  bottom: -7vw;
+  left: 0vw;
+}
+
+.article_menu {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10vh;
+}
+
+.business > img {
+  width: 50vw;
+  display: inline-block;
+}
+
+.business_note {
+  padding-left: 8px;
+}
+.business_note > h2 {
+  font-size: 4vw;
+  font-weight: 700;
+  color: #00044a;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 2rem;
+}
+.business_note > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #6d6e8d;
+}
+.business_note > a {
+  display: inline-flex;
+  color: #fff;
+  background-color: #000dff;
+  border-radius: 5px;
+  padding: 16px 48px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.business_note > a::before {
+  content: "";
+  display: block;
+  background-color: #27cb8b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  z-index: 0;
+}
+.business_note > a > * {
+  position: relative;
+  z-index: 1;
+}
+.business_note > a:hover::before {
+  transform: translateX(0);
+}
