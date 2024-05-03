@@ -1,0 +1,11 @@
+html,
+body {
+  font-family: $font-family;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $spacer * 2;
+}
+a {
+  text-decoration: none;
+}
