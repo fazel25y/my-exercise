@@ -1,6 +1,13 @@
 html,
 body {
   font-family: $font_family2;
-  width: 100%;
-  font-size: $spacer1;
+  font-size: $spacer1 * 2;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgb(108, 117, 125);
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
 }

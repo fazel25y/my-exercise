@@ -1,0 +1,12 @@
+@mixin parent_width() {
+  width: 100%;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin column($justify: space-between, $alignItems: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignItems;
+}

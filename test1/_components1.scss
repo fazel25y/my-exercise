@@ -1,0 +1,49 @@
+.list_form {
+  @include parent_width;
+
+  background: transparent;
+  z-index: 100;
+
+  padding: 0.5rem 1rem;
+
+  position: relative;
+}
+.list_style {
+  list-style-type: none;
+  @include column;
+  gap: 2px;
+  font-size: $spacer1 * 2;
+  width: 100%;
+  & > li > a {
+    color: $text_color;
+  }
+}
+.menu_list > a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.menu {
+  width: 89vw;
+  @include column;
+}
+.logo {
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  margin-left: 4rem;
+
+  display: inline-block;
+}
+.logo > a {
+  color: #fff;
+}
+.image_1 > img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  z-index: 10;
+}
