@@ -3,9 +3,6 @@
 
   background: transparent;
   z-index: 100;
-
-  padding: 0.5rem 1rem;
-
   position: relative;
 }
 .list_style {
@@ -14,12 +11,12 @@
   gap: 2px;
   font-size: $spacer1 * 2;
   width: 100%;
-  & > li > a {
-    color: $text_color;
-  }
 }
 .menu_list > a {
   color: rgba(255, 255, 255, 0.5);
+}
+.first_style > a {
+  color: $text_color;
 }
 .menu {
   width: 89vw;
@@ -28,7 +25,7 @@
 .logo {
   letter-spacing: 0.2em;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: inherit;
   white-space: nowrap;
   margin-left: 4rem;
@@ -38,12 +35,36 @@
 .logo > a {
   color: #fff;
 }
-.image_1 > img {
+.photo_type {
+  @include parent_width;
+}
+.photo_type ::before {
+  content: "";
+
   width: 100%;
+  z-index: -1;
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
-
-  z-index: 10;
+  right: 0;
+  bottom: 0;
+  background-image: url(../pictures/big_image_1.jpg.webp);
+  min-height: 750px;
+  height: 116vw;
+  background-size: cover;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+}
+.photo_type ::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  min-height: 750px;
+  height: 116vw;
+  background-attachment: fixed;
 }
